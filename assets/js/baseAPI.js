@@ -2,7 +2,7 @@
 // 得到配置对象
 $.ajaxPrefilter(function (options) {
     // 在发起真正的ajax请求前，统一拼接根路径
-    options.url = 'http://www.liulongbin.top:3007' + options.url;
+    options.url = 'http://big-event-api-t.itheima.net' + options.url;
     // 统一为有权限的接口设置headers请求头
     if (options.url.indexOf('/my/' !== -1)) {
         options.headers = {
